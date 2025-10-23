@@ -56,7 +56,8 @@ Actual FME WB
 
 ## Contact & Credits
 
-Created by [Your Name or Team].  
-Questions/support: [your@email.com]
+Created by Era Elmido.  
+Questions/support: [elmido13@gmail.com]
+
 
 
