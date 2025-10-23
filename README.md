@@ -33,7 +33,9 @@ flowchart TD
     I --> J[Output Results]
 ```
 
-![Main Page Screenshot](https://github.com/eelmido13/ArcGIS-and-PostGIS-Data-Integration/blob/main/Workbench.png)
+Actual FME WB
+
+![Main Page Screenshot](https://github.com/eelmido13/Downstream-Homes-Network-Analyzer/blob/main/fme_wb_screenshot.png)
 
 ## How It Works
 
@@ -56,4 +58,5 @@ flowchart TD
 
 Created by [Your Name or Team].  
 Questions/support: [your@email.com]
+
 
