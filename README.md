@@ -33,7 +33,7 @@ flowchart TD
     I --> J[Output Results]
 ```
 
-*Replace this diagram with a screenshot of your actual FME workspace for more clarity if available!*
+![Main Page Screenshot](https://github.com/eelmido13/ArcGIS-and-PostGIS-Data-Integration/blob/main/Workbench.png)
 
 ## How It Works
 
@@ -56,3 +56,4 @@ flowchart TD
 
 Created by [Your Name or Team].  
 Questions/support: [your@email.com]
+
