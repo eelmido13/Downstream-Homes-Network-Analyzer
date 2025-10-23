@@ -4,32 +4,18 @@ This FME Workbench calculates the number of downstream homes connected at every 
 
 ## Key Features
 
-- **Topology Validation & Correction:**  
-  Ensures all input network datasets are connected; snaps misaligned features automatically.
-- **Network Topology Construction:**  
-  Builds a logical model of the real-world network from line and point data.
-- **Downstream Home Calculation:**  
-  Determines the number of homes/premises affected downstream of each network segment.
-- **Critical Issue Detection:**  
-  Flags shortages, faults, blockages, and wayleave requirements.
-- **Priority Task Generation:**  
-  Helps field deployment teams focus efforts on critical network segments.
+- Topology Validation & Correction: Ensures all input network datasets are connected; snaps misaligned features automatically.
+- Network Topology Construction: Builds a logical model of the real-world network from line and point data.
+- Downstream Home Calculation: Determines the number of homes/premises affected downstream of each network segment.
+- Critical Issue Detection: Flags shortages, faults, blockages, and wayleave requirements.
+- Priority Task Generation: Helps field deployment teams focus efforts on critical network segments.
 
 ## Input Data Layers
 
-- **Line Layer:**  
-  - Fiber cable  
-  - Ducts  
-  - Gas line  
-  - Power line  
-- **Point Layer:**  
-  - Splice closure  
-  - Chamber  
-  - Water inlet  
-- **Main Start Point:**  
-  - The origin/root of the network
-- **Premises Layer:**  
-  - Locations of homes/premises to be analyzed
+- Line Layer: Fiber cable, Ducts, Gas line, Power line
+- Point Layer: Splice closure, Chamber, Water inlet
+- Main Start Point: The origin/root of the network
+- Premises Layer: Locations of homes/premises to be analyzed
 
 ## Visual Workflow
 
@@ -41,29 +27,23 @@ flowchart TD
     C -- No --> E[Build Network Topology]
     D --> E
     E --> F[Analyze Network Segments]
-    F --> G[Detect Issues (Shortage, Fault, Blockage, Wayleave)]
+    F --> G[Detect Issues]
     G --> H[Calculate Downstream Homes]
     H --> I[Generate Priority Task List]
-    I --> J[Output Results for Field Teams]
+    I --> J[Output Results]
 ```
+
 *Replace this diagram with a screenshot of your actual FME workspace for more clarity if available!*
 
 ## How It Works
 
-1. **Load Input Layers:**  
-   Import line, point, main start, and premises data into FME.
-2. **Topology Validation:**  
-   Check network for disconnected segments and misaligned points.
-3. **Snapping Correction:**  
-   Automatically adjust features to ensure proper connections.
-4. **Build Network Topology:**  
-   Construct logical network from corrected inputs.
-5. **Segment Analysis:**  
-   For each network segment, detect issues and calculate downstream homes.
-6. **Task Prioritization:**  
-   Rank critical network segments by affected homes/premises.
-7. **Export Results:**  
-   Output a prioritized task list for deployment teams.
+1. Load Input Layers: Import line, point, main start, and premises data into FME.
+2. Topology Validation: Check network for disconnected segments and misaligned points.
+3. Snapping Correction: Automatically adjust features to ensure proper connections.
+4. Build Network Topology: Construct logical network from corrected inputs.
+5. Segment Analysis: For each network segment, detect issues and calculate downstream homes.
+6. Task Prioritization: Rank critical network segments by affected homes/premises.
+7. Export Results: Output a prioritized task list for deployment teams.
 
 ## Usage
 
@@ -76,4 +56,3 @@ flowchart TD
 
 Created by [Your Name or Team].  
 Questions/support: [your@email.com]
-
